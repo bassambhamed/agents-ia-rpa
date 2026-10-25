@@ -1,0 +1,42 @@
+{
+  "cgv_fictiva.pdf": {
+    "titre": "Conditions générales de vente",
+    "confidentialite": "public"
+  },
+  "politique_retours.md": {
+    "titre": "Politique de retours et de remboursement",
+    "confidentialite": "public"
+  },
+  "faq_clients.html": {
+    "titre": "Questions fréquentes",
+    "confidentialite": "public"
+  },
+  "catalogue_produits.docx": {
+    "titre": "Catalogue produits 2026",
+    "confidentialite": "public"
+  },
+  "guide_livraison.md": {
+    "titre": "Guide de livraison",
+    "confidentialite": "public"
+  },
+  "conditions_maintenance.pdf": {
+    "titre": "Conditions des contrats de maintenance",
+    "confidentialite": "public"
+  },
+  "guide_nas_ns4.pdf": {
+    "titre": "Serveur NAS NS-4 — Guide de démarrage rapide",
+    "confidentialite": "public"
+  },
+  "politique_donnees.html": {
+    "titre": "Politique de protection des données",
+    "confidentialite": "public"
+  },
+  "conditions_portail.md": {
+    "titre": "Conditions d'utilisation du portail client",
+    "confidentialite": "public"
+  },
+  "procedure_sav_interne.md": {
+    "titre": "Procédure interne du service après-vente",
+    "confidentialite": "interne"
+  }
+}

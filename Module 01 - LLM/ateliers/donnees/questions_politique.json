@@ -1,0 +1,50 @@
+[
+  {
+    "id": "Q1",
+    "question": "Quel est le délai de retour pour un client Premium ?",
+    "reponse_attendue": "60 jours",
+    "repondable": true
+  },
+  {
+    "id": "Q2",
+    "question": "Les frais de livraison initiaux sont-ils remboursés pour un article défectueux ?",
+    "reponse_attendue": "Oui",
+    "repondable": true
+  },
+  {
+    "id": "Q3",
+    "question": "Dans quel délai le remboursement est-il effectué ?",
+    "reponse_attendue": "14 jours après réception des articles par l'entrepôt",
+    "repondable": true
+  },
+  {
+    "id": "Q4",
+    "question": "Un article fabriqué sur mesure peut-il être retourné sans défaut ?",
+    "reponse_attendue": "Non",
+    "repondable": true
+  },
+  {
+    "id": "Q5",
+    "question": "Les frais d'envoi du retour vers l'entrepôt sont-ils pris en charge par Fictiva ?",
+    "reponse_attendue": "INCONNU",
+    "repondable": false
+  },
+  {
+    "id": "Q6",
+    "question": "Le délai de retour est-il différent pour les clients situés hors de Suisse ?",
+    "reponse_attendue": "INCONNU",
+    "repondable": false
+  },
+  {
+    "id": "Q7",
+    "question": "Peut-on échanger un article contre un autre modèle au lieu d'être remboursé ?",
+    "reponse_attendue": "INCONNU",
+    "repondable": false
+  },
+  {
+    "id": "Q8",
+    "question": "Quel est le numéro de téléphone du service client ?",
+    "reponse_attendue": "INCONNU",
+    "repondable": false
+  }
+]

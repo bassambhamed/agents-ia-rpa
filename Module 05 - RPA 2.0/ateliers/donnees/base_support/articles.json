@@ -1,0 +1,170 @@
+[
+  {
+    "id": "KB-101",
+    "titre": "LX-500 : bourrages papier répétés",
+    "produits": ["LX-500", "PA-4R"],
+    "confidentialite": "public",
+    "mise_a_jour": "2026-05-12",
+    "contenu": "Symptôme : le papier se coince dans le bac ou à la sortie de l'unité recto-verso.\nCause fréquente : papier humide, grammage supérieur à 120 g ou guides du bac mal réglés.\nSolution : utilisez du papier de 80 g conservé dans son emballage (par exemple PA-4R), aérez la ramette avant de la charger et ajustez les guides contre la pile sans la serrer. Nettoyez le rouleau d'entraînement avec un chiffon sec non pelucheux.\nSi les bourrages persistent après ces étapes, le rouleau d'entraînement est peut-être usé : contactez le support technique. Pendant la garantie de 24 mois, un rouleau défectueux est remplacé ; l'usure normale n'est pas couverte."
+  },
+  {
+    "id": "KB-102",
+    "titre": "LX-500 : l'imprimante n'apparaît pas sur le réseau Wi-Fi",
+    "produits": ["LX-500"],
+    "confidentialite": "public",
+    "mise_a_jour": "2026-03-02",
+    "contenu": "Symptôme : l'imprimante ne se connecte pas au Wi-Fi ou n'apparaît pas dans la liste des imprimantes.\nCause : la LX-500 ne prend en charge que la bande Wi-Fi de 2,4 GHz ; un réseau réservé au 5 GHz n'est pas visible.\nSolution : activez la bande 2,4 GHz sur le point d'accès, puis relancez l'assistant depuis le panneau de l'imprimante, menu Réseau > Assistant Wi-Fi. Pour repartir de zéro, utilisez Réseau > Réinitialiser les paramètres réseau.\nUne connexion par câble Ethernet reste la solution la plus fiable pour une imprimante partagée."
+  },
+  {
+    "id": "KB-103",
+    "titre": "LX-500 : impression pâle ou traces sur les pages",
+    "produits": ["LX-500", "TN-500"],
+    "confidentialite": "public",
+    "mise_a_jour": "2026-04-18",
+    "contenu": "Symptôme : texte de plus en plus pâle, bandes blanches verticales ou traces grises.\nCause : toner presque vide (le TN-500 a un rendement d'environ 6 000 pages) ou tambour encrassé.\nSolution : retirez le toner, secouez-le doucement d'un côté à l'autre, puis réinsérez-le. Si l'impression reste pâle, remplacez le toner par un TN-500. Lancez ensuite le nettoyage du tambour : menu Maintenance > Nettoyage.\nLes toners sont des consommables : ils sont exclus de la garantie et des contrats de maintenance. Les dommages causés par un toner d'une autre marque ne sont pas couverts."
+  },
+  {
+    "id": "KB-104",
+    "titre": "LX-500 : voyant rouge clignotant et code d'erreur E-21",
+    "produits": ["LX-500"],
+    "confidentialite": "public",
+    "mise_a_jour": "2026-10-20",
+    "contenu": "Symptôme : le voyant d'erreur clignote en rouge et l'écran affiche le code E-21.\nSignification : erreur de l'unité de fusion (l'élément chauffant qui fixe le toner sur le papier).\nSolution : éteignez l'imprimante, débranchez-la et laissez-la refroidir 30 minutes, puis rallumez-la. Ne touchez pas l'unité de fusion : elle peut être brûlante.\nSi le code E-21 réapparaît, l'imprimante doit être réparée ou remplacée : contactez le support technique en indiquant le numéro de série inscrit à l'arrière de l'appareil. Pendant la garantie de 24 mois, la réparation ou le remplacement est gratuit, et l'étiquette de retour est fournie."
+  },
+  {
+    "id": "KB-201",
+    "titre": "EC-27Q : pas d'image avec un ordinateur raccordé en USB-C",
+    "produits": ["EC-27Q", "NB-14"],
+    "confidentialite": "public",
+    "mise_a_jour": "2026-06-30",
+    "contenu": "Symptôme : l'écran reste noir ou affiche « Aucun signal » quand un ordinateur portable est raccordé par USB-C.\nCauses fréquentes : câble USB-C qui ne transporte que la charge et les données (sans vidéo), ou source d'entrée mal sélectionnée.\nSolution : utilisez le câble USB-C fourni avec l'écran, ou un câble compatible DisplayPort Alt Mode. Dans le menu de l'écran (bouton sous le bord droit), choisissez Source > USB-C. Vérifiez que le port USB-C de l'ordinateur prend en charge la vidéo (symbole DisplayPort ou Thunderbolt).\nL'écran alimente l'ordinateur jusqu'à 65 W par le même câble. Si l'écran n'affiche rien non plus en HDMI, il est probablement défectueux : contactez le support technique."
+  },
+  {
+    "id": "KB-202",
+    "titre": "DK-200 : les deux écrans affichent la même image ou un seul écran fonctionne",
+    "produits": ["DK-200", "EC-27Q"],
+    "confidentialite": "public",
+    "mise_a_jour": "2026-07-14",
+    "contenu": "Symptôme : avec deux écrans raccordés à la station d'accueil DK-200, les deux écrans affichent la même image, ou un seul écran fonctionne.\nCause : la DK-200 pilote deux écrans distincts grâce à la technologie DisplayPort MST. Windows prend en charge le MST ; macOS ne le prend pas en charge : sur un Mac, les deux écrans affichent la même image (recopie vidéo).\nSolution sous Windows : mettez à jour le micrologiciel de la station avec l'outil DK-Update, disponible dans le portail client, rubrique Téléchargements, puis choisissez « Étendre ces affichages » dans les paramètres d'affichage.\nSur un Mac, raccordez le second écran directement à l'ordinateur si celui-ci gère plusieurs écrans externes."
+  },
+  {
+    "id": "KB-203",
+    "titre": "DK-200 : l'ordinateur portable ne charge pas sur la station",
+    "produits": ["DK-200", "NB-14"],
+    "confidentialite": "public",
+    "mise_a_jour": "2026-02-09",
+    "contenu": "Symptôme : l'ordinateur fonctionne sur la station, mais sa batterie ne se charge pas.\nCause : l'ordinateur est raccordé au mauvais port USB-C de la station, ou l'adaptateur secteur de la station n'est pas branché.\nSolution : raccordez l'ordinateur au port USB-C marqué « PD » à l'arrière de la station et vérifiez que l'adaptateur secteur de 100 W fourni est branché. La station délivre jusqu'à 100 W, ce qui suffit à un NB-14 (chargeur de 65 W)."
+  },
+  {
+    "id": "KB-301",
+    "titre": "KB-80 et MS-30 : clavier ou souris sans fil qui ne répond pas ou réagit en retard",
+    "produits": ["KB-80", "MS-30"],
+    "confidentialite": "public",
+    "mise_a_jour": "2026-01-22",
+    "contenu": "Symptôme : touches ou clics ignorés, curseur saccadé, latence.\nCauses fréquentes : piles faibles, récepteur USB placé derrière l'ordinateur ou à côté d'un port USB 3.0, qui perturbe le signal sans fil.\nSolution : remplacez les piles, puis branchez le récepteur sur un port avant ou sur la rallonge USB fournie, à moins d'un mètre du clavier. Pour réassocier un appareil au récepteur, maintenez le bouton Connect sous l'appareil pendant 3 secondes."
+  },
+  {
+    "id": "KB-302",
+    "titre": "KB-80 : les lettres Y et Z sont inversées ou les accents ne correspondent pas",
+    "produits": ["KB-80"],
+    "confidentialite": "public",
+    "mise_a_jour": "2026-01-22",
+    "contenu": "Symptôme : la touche Z produit un Y, ou les touches d'accents ne correspondent pas aux inscriptions.\nCause : la disposition de clavier choisie dans le système n'est pas la disposition suisse romande du KB-80.\nSolution : sous Windows, Paramètres > Heure et langue > Langue > Clavier : ajoutez « Suisse (français) ». Sous macOS, Réglages Système > Clavier > Méthodes de saisie : ajoutez « Suisse romand ». Le clavier lui-même n'est pas en cause."
+  },
+  {
+    "id": "KB-401",
+    "titre": "NB-14 : la batterie ne se charge pas au-delà de 80 %",
+    "produits": ["NB-14"],
+    "confidentialite": "public",
+    "mise_a_jour": "2026-08-25",
+    "contenu": "Symptôme : la charge de la batterie s'arrête à 80 %.\nCause : ce n'est pas une panne. Le mode « protection de la batterie » est activé par défaut : limiter la charge à 80 % prolonge la durée de vie de la batterie.\nSolution : pour charger complètement avant un déplacement, ouvrez l'utilitaire Fictiva Care, rubrique Alimentation, et désactivez temporairement la protection de la batterie.\nUne batterie dont l'autonomie baisse fortement en moins de 24 mois peut être couverte par la garantie : lancez le test de batterie dans Fictiva Care et contactez le support technique avec le résultat."
+  },
+  {
+    "id": "KB-402",
+    "titre": "NB-14 : écran noir au démarrage",
+    "produits": ["NB-14"],
+    "confidentialite": "public",
+    "mise_a_jour": "2026-08-25",
+    "contenu": "Symptôme : l'ordinateur semble s'allumer (voyant, ventilateur) mais l'écran reste noir.\nSolution : débranchez le chargeur et tous les périphériques, maintenez le bouton d'alimentation enfoncé pendant 15 secondes, puis rallumez l'ordinateur.\nSi l'écran reste noir, appuyez sur F2 au démarrage pour lancer le diagnostic matériel intégré, puis contactez le support technique en indiquant le code affiché à la fin du test."
+  },
+  {
+    "id": "KB-501",
+    "titre": "NS-4 : voyant orange, disque en panne ou grappe RAID dégradée",
+    "produits": ["NS-4", "HD-8T"],
+    "confidentialite": "public",
+    "mise_a_jour": "2026-09-03",
+    "contenu": "Symptôme : le voyant d'état du NS-4 est orange.\nSignification : un disque est en panne et la grappe RAID est dégradée. Les données restent accessibles en RAID 1, 5, 6 ou 10, mais la tolérance aux pannes est réduite : agissez rapidement.\nSolution : dans l'interface web, ouvrez Stockage > Disques pour identifier le disque signalé. Le NS-4 accepte le remplacement à chaud : remplacez le disque défaillant sans éteindre le serveur, par un disque de même capacité (par exemple HD-8T). La reconstruction démarre automatiquement et peut durer plusieurs heures ; le voyant clignote en vert pendant ce temps.\nNe retirez jamais deux disques à la fois. Les disques vendus par Fictiva sont garantis 24 mois."
+  },
+  {
+    "id": "KB-502",
+    "titre": "NS-4 : l'interface web http://ns4.local est inaccessible",
+    "produits": ["NS-4"],
+    "confidentialite": "public",
+    "mise_a_jour": "2026-04-07",
+    "contenu": "Symptôme : le navigateur ne trouve pas l'adresse http://ns4.local, en particulier à travers un VPN ou sur un réseau segmenté.\nCause : le nom ns4.local repose sur la découverte automatique (mDNS), souvent bloquée par les VPN et les pare-feu.\nSolution : retrouvez l'adresse IP du serveur avec l'outil NS Finder, disponible dans le portail client, rubrique Téléchargements, ou dans la liste des appareils de votre routeur. Ouvrez ensuite http:// suivi de cette adresse IP. Vérifiez que l'ordinateur et le serveur sont sur le même réseau ou que le VPN autorise ce trafic."
+  },
+  {
+    "id": "KB-503",
+    "titre": "NS-4 : mot de passe administrateur oublié",
+    "produits": ["NS-4"],
+    "confidentialite": "public",
+    "mise_a_jour": "2026-04-07",
+    "contenu": "Le support technique ne connaît pas et ne peut pas récupérer le mot de passe administrateur du NS-4 : il n'est enregistré que sur l'appareil.\nSolution : maintenez le bouton RESET, à l'arrière du serveur, enfoncé pendant 10 secondes, jusqu'à un bip. Le mot de passe administrateur et la configuration réseau reviennent aux valeurs d'usine ; les données et les grappes RAID sont conservées. Reconnectez-vous ensuite à l'interface web pour créer un nouveau mot de passe d'au moins 12 caractères."
+  },
+  {
+    "id": "KB-504",
+    "titre": "NS-4 : voyant rouge, surchauffe",
+    "produits": ["NS-4"],
+    "confidentialite": "public",
+    "mise_a_jour": "2026-09-03",
+    "contenu": "Symptôme : le voyant d'état est rouge ; le serveur peut s'arrêter de lui-même.\nSignification : surchauffe. Le NS-4 se protège en arrêtant les disques.\nSolution : laissez au moins 10 cm d'espace libre derrière et sur les côtés du serveur, dépoussiérez les grilles d'aération et vérifiez que la température de la pièce ne dépasse pas 35 °C. Contactez ensuite le support technique en indiquant le numéro de série : une surchauffe est un problème de sécurité, traité en priorité."
+  },
+  {
+    "id": "KB-505",
+    "titre": "NS-4 : partages lents depuis un Mac après la mise à jour 4.1",
+    "produits": ["NS-4"],
+    "confidentialite": "public",
+    "mise_a_jour": "2026-10-02",
+    "contenu": "Symptôme : depuis la mise à jour 4.1 du micrologiciel, l'ouverture des dossiers partagés est très lente sur les ordinateurs Mac.\nCause : défaut connu de la version 4.1 dans le partage de fichiers SMB, corrigé par la version 4.2.\nSolution : installez le micrologiciel 4.2 depuis l'interface web, menu Système > Mise à jour, en dehors des heures de travail : le serveur redémarre automatiquement à la fin de l'installation."
+  },
+  {
+    "id": "KB-601",
+    "titre": "WC-HD : la webcam n'est pas détectée par l'application de visioconférence",
+    "produits": ["WC-HD"],
+    "confidentialite": "public",
+    "mise_a_jour": "2026-06-11",
+    "contenu": "Symptôme : la webcam n'apparaît pas dans Teams, Zoom ou une autre application.\nSolution : sous macOS, autorisez l'application à utiliser la caméra dans Réglages Système > Confidentialité et sécurité > Caméra, puis relancez l'application. Sous Windows, vérifiez Paramètres > Confidentialité > Caméra. Branchez la webcam directement sur l'ordinateur plutôt que sur un concentrateur USB non alimenté, et choisissez « WC-HD » comme caméra dans les réglages de l'application.\nLa WC-HD est conçue pour un ordinateur : elle n'est pas compatible avec les systèmes de visioconférence de salle dédiés."
+  },
+  {
+    "id": "KB-602",
+    "titre": "SE-700 : l'assise du siège descend toute seule",
+    "produits": ["SE-700"],
+    "confidentialite": "public",
+    "mise_a_jour": "2026-03-19",
+    "contenu": "Symptôme : l'assise du siège ergonomique redescend progressivement pendant l'utilisation.\nCause : vérin à gaz défectueux.\nSolution : pendant la garantie de 24 mois, Fictiva envoie gratuitement un vérin de remplacement ; le montage prend une dizaine de minutes avec la notice fournie. Contactez le support technique en indiquant le numéro de commande."
+  },
+  {
+    "id": "KB-701",
+    "titre": "Portail client : accès perdu à l'authentification à deux facteurs",
+    "produits": ["Portail client"],
+    "confidentialite": "public",
+    "mise_a_jour": "2026-05-28",
+    "contenu": "Symptôme : vous avez changé de téléphone et ne recevez plus les codes de l'authentification à deux facteurs.\nSolution : utilisez l'un des codes de secours fournis lors de l'activation de l'authentification à deux facteurs, puis enregistrez votre nouveau téléphone dans Mon profil > Sécurité.\nSans code de secours, demandez à l'administrateur du compte de votre entreprise de réinitialiser votre authentification à deux facteurs. Si vous êtes vous-même administrateur, contactez le service client : la réinitialisation se fait après une vérification d'identité."
+  },
+  {
+    "id": "KB-702",
+    "titre": "Suite bureautique LIC-SB : clé de licence refusée ou « déjà utilisée »",
+    "produits": ["LIC-SB"],
+    "confidentialite": "public",
+    "mise_a_jour": "2026-02-16",
+    "contenu": "Symptôme : l'activation échoue avec le message « clé non valide » ou « clé déjà utilisée ».\nSolution : vérifiez la saisie (confusion entre O et 0, I et 1), puis réessayez. Si le message persiste, la clé est considérée comme défectueuse : contactez le service client avec le numéro de commande pour obtenir une clé de remplacement. Ne relancez pas l'activation sur plusieurs postes avec la même clé.\nRappel : une licence activée n'est ni reprise ni remboursée."
+  },
+  {
+    "id": "KB-900",
+    "titre": "Note interne : défaut d'unité de fusion sur un lot de LX-500",
+    "produits": ["LX-500"],
+    "confidentialite": "interne",
+    "mise_a_jour": "2026-10-21",
+    "contenu": "Note interne au support, ne pas communiquer aux clients avant la communication officielle du fabricant.\nLes LX-500 dont le numéro de série commence par LX5-2609 (lot de septembre 2026) présentent un défaut connu de l'unité de fusion, qui provoque le code E-21 après quelques jours d'utilisation.\nConduite à tenir : remplacement standard de l'imprimante, sans diagnostic préalable, au titre de la garantie. Ne pas mentionner l'existence d'un défaut de lot ; parler d'un remplacement sous garantie."
+  }
+]

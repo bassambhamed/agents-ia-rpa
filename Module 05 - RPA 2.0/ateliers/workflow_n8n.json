@@ -1,0 +1,215 @@
+{
+  "name": "Fictiva - Traitement des emails clients (RPA 2.0)",
+  "nodes": [
+    {
+      "parameters": {
+        "content": "## Workflow RPA 2.0 de Fictiva (atelier 5.A)\n\nChaque email reçu devient un dossier : l'API (`api_rpa.py`, port 8005) le trie, identifie le client et la commande, calcule le remboursement ou fait rédiger la réponse par l'agent RAG, puis applique les règles de routage.\n\n- **Automatique** : clôture immédiate (ticket CRM, réponse envoyée).\n- **À valider** : le workflow transmet son URL de reprise à l'API et attend la décision humaine (console : http://127.0.0.1:8005/console).\n\nEn production, remplacer le webhook par un déclencheur **Email Trigger (IMAP)**. Si n8n tourne dans Docker, remplacer `127.0.0.1` par `host.docker.internal`.",
+        "height": 340,
+        "width": 520
+      },
+      "id": "5f1e0c3a-0a01-4c1e-9a10-000000000001",
+      "name": "Note",
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [-120, -420]
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "fictiva-email",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "id": "5f1e0c3a-0a01-4c1e-9a10-000000000002",
+      "name": "Email reçu",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 0],
+      "webhookId": "0b8c6d2e-5a41-4f0e-8d3b-6f2a9c1e7d01"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:8005/dossiers",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json.body) }}",
+        "options": {
+          "timeout": 600000
+        }
+      },
+      "id": "5f1e0c3a-0a01-4c1e-9a10-000000000003",
+      "name": "Analyser le dossier",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [240, 0],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "9d2f7a10-1c11-4b5e-8f20-000000000001",
+              "leftValue": "={{ $json.doublon }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "5f1e0c3a-0a01-4c1e-9a10-000000000004",
+      "name": "Doublon ?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [480, 0]
+    },
+    {
+      "parameters": {},
+      "id": "5f1e0c3a-0a01-4c1e-9a10-000000000005",
+      "name": "Doublon ignoré",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [720, -160]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "9d2f7a10-1c11-4b5e-8f20-000000000002",
+              "leftValue": "={{ $json.routage.statut }}",
+              "rightValue": "a_valider",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "5f1e0c3a-0a01-4c1e-9a10-000000000006",
+      "name": "Validation humaine ?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [720, 80]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=http://127.0.0.1:8005/dossiers/{{ $json.id }}/attente",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ resume_url: $execution.resumeUrl }) }}",
+        "options": {}
+      },
+      "id": "5f1e0c3a-0a01-4c1e-9a10-000000000007",
+      "name": "Mettre en attente",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [960, -20],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000
+    },
+    {
+      "parameters": {
+        "resume": "webhook",
+        "httpMethod": "POST",
+        "limitWaitTime": true,
+        "limitType": "afterTimeInterval",
+        "resumeAmount": 2,
+        "resumeUnit": "days",
+        "options": {}
+      },
+      "id": "5f1e0c3a-0a01-4c1e-9a10-000000000008",
+      "name": "Attendre la décision humaine",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1200, -20],
+      "webhookId": "0b8c6d2e-5a41-4f0e-8d3b-6f2a9c1e7d02"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=http://127.0.0.1:8005/dossiers/{{ $('Analyser le dossier').item.json.id }}/cloturer",
+        "options": {}
+      },
+      "id": "5f1e0c3a-0a01-4c1e-9a10-000000000009",
+      "name": "Clôturer après validation",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1440, -20],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=http://127.0.0.1:8005/dossiers/{{ $json.id }}/cloturer",
+        "options": {}
+      },
+      "id": "5f1e0c3a-0a01-4c1e-9a10-000000000010",
+      "name": "Clôturer automatiquement",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [960, 180],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000
+    }
+  ],
+  "connections": {
+    "Email reçu": {
+      "main": [[{"node": "Analyser le dossier", "type": "main", "index": 0}]]
+    },
+    "Analyser le dossier": {
+      "main": [[{"node": "Doublon ?", "type": "main", "index": 0}]]
+    },
+    "Doublon ?": {
+      "main": [
+        [{"node": "Doublon ignoré", "type": "main", "index": 0}],
+        [{"node": "Validation humaine ?", "type": "main", "index": 0}]
+      ]
+    },
+    "Validation humaine ?": {
+      "main": [
+        [{"node": "Mettre en attente", "type": "main", "index": 0}],
+        [{"node": "Clôturer automatiquement", "type": "main", "index": 0}]
+      ]
+    },
+    "Mettre en attente": {
+      "main": [[{"node": "Attendre la décision humaine", "type": "main", "index": 0}]]
+    },
+    "Attendre la décision humaine": {
+      "main": [[{"node": "Clôturer après validation", "type": "main", "index": 0}]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {}
+}

@@ -1,0 +1,20 @@
+FICTIVA SA — Chemin des Prés 4, 1020 Renens
+
+FACTURE
+N° : FAC-2026-1220
+Date : 15.10.2026
+Client : Fondation Les Trois Sapins — N° client CL-11140
+
+| Réf.     | Désignation                         | Qté | Prix unitaire | Total    |
+|----------|-------------------------------------|-----|---------------|----------|
+| NS-4     | Serveur NAS 4 baies                 | 2   | 1 250.00      | 2 500.00 |
+| HD-8T    | Disque dur 8 To                     | 8   | 210.00        | 1 680.00 |
+| INST-NAS | Installation et configuration       | 1   | 450.00        | 450.00   |
+
+Sous-total : 4 630.00
+Remise fondation 5 % : -231.50
+Total HT : 4 398.50
+TVA 8,1 % : 356.28
+Total TTC : CHF 4 754.78
+
+Conditions de paiement : 60 jours net (échéance 14.12.2026).

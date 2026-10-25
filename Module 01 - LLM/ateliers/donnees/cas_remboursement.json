@@ -1,0 +1,72 @@
+[
+  {
+    "id": "R01",
+    "description": "Client standard. Livraison il y a 12 jours. Retour de 3 claviers KB-80 non ouverts à 80 CHF pièce, sans défaut. Frais de livraison initiaux : 20 CHF.",
+    "montant_attendu_chf": 216.0,
+    "validation_requise": false,
+    "justification": "Art. 1 et 3 : 240 CHF - 10 % (24 CHF) ; livraison non remboursée."
+  },
+  {
+    "id": "R02",
+    "description": "Client standard. Livraison il y a 45 jours. Retour d'une imprimante LX-500 à 400 CHF, sans défaut.",
+    "montant_attendu_chf": 0.0,
+    "validation_requise": false,
+    "justification": "Art. 1 : délai de 30 jours dépassé et pas de défaut."
+  },
+  {
+    "id": "R03",
+    "description": "Client Premium. Livraison il y a 45 jours. Retour d'une imprimante LX-500 à 400 CHF, sans défaut.",
+    "montant_attendu_chf": 360.0,
+    "validation_requise": false,
+    "justification": "Art. 1.2 et 3 : dans le délai Premium de 60 jours ; 400 - 40 CHF."
+  },
+  {
+    "id": "R04",
+    "description": "Client standard. Livraison il y a 8 mois. Écran EC-27Q à 600 CHF défectueux ; la commande ne contenait que cet écran ; frais de livraison initiaux : 30 CHF.",
+    "montant_attendu_chf": 630.0,
+    "validation_requise": false,
+    "justification": "Art. 2 : défaut sous garantie, remboursement intégral prix + livraison."
+  },
+  {
+    "id": "R05",
+    "description": "Client standard. Livraison il y a 10 jours. Retour de 20 cartouches d'encre CE-20 ouvertes à 25 CHF pièce, sans défaut.",
+    "montant_attendu_chf": 0.0,
+    "validation_requise": false,
+    "justification": "Art. 4 : consommables ouverts non repris."
+  },
+  {
+    "id": "R06",
+    "description": "Client standard. Livraison il y a 5 jours. Retour de 10 sièges SE-700 non déballés à 700 CHF pièce, sans défaut.",
+    "montant_attendu_chf": 6950.0,
+    "validation_requise": true,
+    "justification": "Art. 3 : 7 000 CHF - frais plafonnés à 50 CHF ; art. 5 : > 5 000 CHF, validation requise."
+  },
+  {
+    "id": "R07",
+    "description": "Client Premium. Livraison il y a 20 jours. Retour d'un panneau signalétique personnalisé au logo du client, à 900 CHF, sans défaut.",
+    "montant_attendu_chf": 0.0,
+    "validation_requise": false,
+    "justification": "Art. 3.4 : article personnalisé non repris sans défaut."
+  },
+  {
+    "id": "R08",
+    "description": "Client standard. Livraison il y a 3 ans. Serveur NAS NS-4 à 2 500 CHF défectueux.",
+    "montant_attendu_chf": 0.0,
+    "validation_requise": false,
+    "justification": "Art. 2.3 : garantie de 24 mois expirée."
+  },
+  {
+    "id": "R09",
+    "description": "Client standard. Livraison il y a 29 jours. Retour de 5 souris MS-30 non ouvertes à 30 CHF pièce, sans défaut. Frais de livraison initiaux : 10 CHF.",
+    "montant_attendu_chf": 135.0,
+    "validation_requise": false,
+    "justification": "Art. 1 et 3 : 150 CHF - 10 % (15 CHF)."
+  },
+  {
+    "id": "R10",
+    "description": "Client standard. Livraison il y a 40 jours. Station d'accueil DK-200 à 120 CHF défectueuse ; la commande ne contenait que cet article ; frais de livraison initiaux : 15 CHF.",
+    "montant_attendu_chf": 135.0,
+    "validation_requise": false,
+    "justification": "Art. 2 : défaut sous garantie (le délai de 30 jours ne s'applique pas) ; 120 + 15 CHF."
+  }
+]

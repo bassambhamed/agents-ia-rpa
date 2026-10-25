@@ -1,0 +1,11 @@
+CONTRAT DE MAINTENANCE INFORMATIQUE N° CTR-2026-031
+
+Parties : Fictiva SA (le Prestataire) et Étude Monnier notaires, Place du Marché 5, 1110 Morges (le Client).
+
+1. Périmètre. Le Prestataire assure la maintenance préventive et curative du serveur NAS et des postes de travail du Client.
+2. Prise d'effet et durée. Le contrat prend effet le 1er mars 2026 et est conclu pour une durée initiale de douze mois. Il se renouvelle ensuite tacitement d'année en année, sauf dénonciation par l'une des parties un mois avant l'échéance.
+3. Niveau de service. Délai d'intervention : 8 heures ouvrées à compter de l'appel.
+4. Prix. Redevance annuelle forfaitaire de CHF 2 400.– HT, facturée trimestriellement d'avance.
+5. Paiement. Les factures sont payables à 30 jours.
+
+Morges, le 20 février 2026.

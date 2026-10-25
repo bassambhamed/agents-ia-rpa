@@ -1,0 +1,275 @@
+id,date_reception,expediteur,entreprise,objet,corps,categorie,urgence,jeu
+DEM-001,2026-10-13 15:13,Jonas Wenger,Wenger Énergie,Consommation électrique LX-500,"Bonjour,
+
+Quelle est la consommation électrique de l'imprimante LX-500 en veille ? Nous préparons notre bilan carbone annuel.
+
+Jonas Wenger",question_produit,basse,test
+DEM-002,2026-10-14 12:26,Laurent Bovet,Bovet & Partenaires,Contrats de maintenance NAS,"Bonjour,
+
+Proposez-vous des contrats de maintenance pour les serveurs NAS ? Si oui, à quels tarifs ?
+
+Laurent Bovet",question_produit,basse,test
+DEM-003,2026-10-15 09:39,Agathe Roulin,Haute école de gestion (projet étudiant),Étude de cas – digitalisation des PME,"Bonjour,
+
+Dans le cadre d'une étude sur la digitalisation des PME romandes, accepteriez-vous un entretien de 30 minutes avec notre équipe ?
+
+Agathe Roulin",autre,basse,test
+DEM-004,2026-10-16 16:52,Directrice des achats,Clinique du Lac SA,Appel d'offres – renouvellement du parc,"Bonjour,
+
+Nous lançons un appel d'offres pour le renouvellement de 120 postes de travail (budget estimé : 150 000 CHF). Pouvez-vous nous transmettre vos conditions tarifaires et les fiches techniques de vos portables NB-14 avant jeudi midi ?
+
+La directrice des achats
+Clinique du Lac SA",question_produit,haute,test
+DEM-005,2026-10-19 13:05,Stéphane Perrin,Perrin Physiothérapie,Certification sièges,"Bonjour,
+
+Vos sièges SE-700 sont-ils certifiés selon une norme ergonomique européenne ?
+
+Stéphane Perrin",question_produit,basse,test
+DEM-006,2026-10-20 10:18,Pierre Müller,Müller Logistique Sàrl,Remboursement exigé – dernier avertissement,"Monsieur,
+
+Malgré trois relances, nous n'avons toujours pas reçu le remboursement de 1 250 CHF promis le 15 septembre pour le serveur retourné (avoir AV-2026-0087). Sans versement sous 10 jours, nous transmettrons le dossier à notre avocat.
+
+Pierre Müller
+Directeur, Müller Logistique Sàrl",remboursement,haute,test
+DEM-007,2026-10-21 17:31,Thomas Girard,Girard Ingénierie,Chargeur qui surchauffe – danger,"Bonjour,
+
+Un des chargeurs fournis avec les ordinateurs portables NB-14 a fortement chauffé et dégagé une odeur de brûlé hier soir dans nos bureaux. Nous avons débranché tous les chargeurs du lot par précaution. Que devons-nous faire ?
+
+Client CL-10877
+Thomas Girard, Girard Ingénierie",reclamation,haute,exemples
+DEM-008,2026-10-22 14:44,Michel Gerber,Gerber Menuiserie,Catalogue papier,"Bonjour,
+
+Avez-vous un catalogue 2027 en version papier ? Si oui, pouvez-vous nous en envoyer un exemplaire ?
+
+Michel Gerber",question_produit,basse,test
+DEM-009,2026-10-23 11:57,Claire Monnier,Étude Monnier notaires,Intervention non effectuée,"Bonjour,
+
+Le technicien qui devait installer notre serveur NAS NS-4 jeudi dernier ne s'est jamais présenté et personne ne nous a prévenus. Merci de nous proposer un nouveau créneau.
+
+Claire Monnier
+Étude Monnier notaires",reclamation,normale,test
+DEM-010,2026-10-12 08:10,Sophie Bertrand,Fiduciaire Bertrand & Associés,Colis manquant commande CMD-2026-0398,"Bonjour,
+
+Nous avons reçu 2 colis sur 3 pour la commande CMD-2026-0398. Il manque les 10 docks USB-C DK-200. Pouvez-vous vérifier et nous faire parvenir le colis manquant ?
+
+Cordialement,
+Sophie Bertrand
+Fiduciaire Bertrand & Associés",reclamation,normale,exemples
+DEM-011,2026-10-13 15:23,Informatique interne,Clinique du Lac SA,Test,Test – merci d'ignorer ce message.,autre,basse,test
+DEM-012,2026-10-14 12:36,Martine Golay,Golay Architectes,Commande jamais livrée – remboursement de l'acompte,"Bonjour,
+
+La commande CMD-2026-0390 de 12 ordinateurs portables NB-14 (14 400 CHF) ne nous a jamais été livrée et nous avons dû acheter ailleurs. Merci de nous rembourser au plus vite l'acompte de 7 200 CHF versé le 1er septembre.
+
+Martine Golay
+Golay Architectes",remboursement,haute,test
+DEM-013,2026-10-15 09:49,Fabien Cuendet,Cuendet Ingénieurs Conseils,Stock portables NB-14 – réponse aujourd'hui,"Bonjour,
+
+Nous accueillons 15 nouveaux collaborateurs lundi prochain. Pouvez-vous nous confirmer aujourd'hui si 15 portables NB-14 sont en stock et livrables d'ici vendredi ?
+
+Merci,
+Fabien Cuendet",question_produit,normale,test
+DEM-014,2026-10-16 16:02,Nadia Morel,Atelier Morel Sàrl,Erreur de prix sur la facture FAC-2026-1187,"Bonjour,
+
+Sur la facture FAC-2026-1187, le prix unitaire des 5 écrans EC-27Q est de 650 CHF alors que votre offre indiquait 600 CHF, soit 250 CHF facturés en trop. Merci de corriger la facture.
+
+Nadia Morel
+Atelier Morel Sàrl – client CL-10590",litige_facturation,normale,exemples
+DEM-015,2026-10-19 13:15,Valérie Simon,Simon Graphisme,Retour de cartouches,"Bonjour,
+
+Nous voudrions retourner 20 cartouches d'encre CE-20 que nous avons ouvertes mais qui ne conviennent pas à nos imprimantes. Est-il possible d'être remboursés ?
+
+Valérie Simon
+Simon Graphisme",remboursement,normale,test
+DEM-016,2026-10-20 10:28,Olivier Roux,Roux Avocats,Retour imprimante – client Premium,"Bonjour,
+
+En tant que client Premium (CL-10012), nous souhaitons retourner l'imprimante LX-500 livrée il y a 45 jours, qui ne correspond finalement pas à nos besoins. Merci de procéder au remboursement.
+
+Olivier Roux
+Roux Avocats",remboursement,normale,test
+DEM-017,2026-10-21 17:41,Daniel Keller,Keller & Fils SA,Retour de 10 sièges ergonomiques,"Bonjour,
+
+Suite à l'annulation de notre projet d'agrandissement, nous souhaitons retourner les 10 sièges SE-700 de la commande CMD-2026-0402 (montant : 7 000 CHF), non déballés, et en obtenir le remboursement.
+
+Merci de votre retour rapide.
+Daniel Keller
+Keller & Fils SA",remboursement,haute,exemples
+DEM-018,2026-10-22 14:54,Patrick Vuilleumier,Vuilleumier Assurances,Licences non activées – 40 postes bloqués,"Bonjour,
+
+Les 40 licences de la suite bureautique livrées avec la commande CMD-2026-0430 sont refusées à l'activation (message « clé invalide »). Nos 40 collaborateurs ne peuvent plus travailler depuis ce matin. C'est urgent !
+
+Client CL-11020
+Patrick Vuilleumier, Vuilleumier Assurances",reclamation,haute,test
+DEM-019,2026-10-23 11:07,Laura Blanc,Blanc Design,Écran défectueux – remboursement,"Bonjour,
+
+L'écran EC-27Q reçu le mois dernier s'éteint toutes les dix minutes. Nous ne voulons pas d'échange : merci de nous rembourser le montant de la facture FAC-2026-1150, soit 600 CHF.
+
+Cordialement,
+Laura Blanc
+Blanc Design",remboursement,normale,test
+DEM-020,2026-10-12 08:20,Lucie Martin,,Candidature spontanée – logisticienne,"Madame, Monsieur,
+
+Titulaire d'un CFC de logisticienne, je me permets de vous adresser ma candidature spontanée pour un poste dans votre entrepôt. Vous trouverez mon CV en pièce jointe.
+
+Lucie Martin",autre,basse,test
+DEM-021,2026-10-13 15:33,Émilie Chevalier,Chevalier Conseil,Demande de remboursement – claviers non utilisés,"Bonjour,
+
+Nous avons commandé par erreur 3 claviers KB-80 (commande CMD-2026-0415, livrée le 9 octobre). Ils sont encore dans leur emballage d'origine. Nous souhaitons les retourner et être remboursés. Merci de nous indiquer la marche à suivre.
+
+Client CL-10456
+Émilie Chevalier, Chevalier Conseil",remboursement,normale,exemples
+DEM-022,2026-10-14 12:46,Inès Fontana,Fontana Design Studio,Ouverture d'un compte professionnel,"Bonjour,
+
+Nous souhaiterions ouvrir un compte client professionnel afin de pouvoir commander dès la semaine prochaine. Quels documents faut-il vous fournir ?
+
+Inès Fontana",autre,normale,exemples
+DEM-023,2026-10-15 09:59,Hélène Burri,Cabinet médical des Tilleuls,Disponibilité chaises SE-700,"Bonjour,
+
+Nous préparons notre budget 2027. Pourriez-vous nous indiquer la disponibilité et le délai de livraison pour 50 chaises SE-700 ?
+
+Cordialement,
+Hélène Burri",question_produit,basse,exemples
+DEM-024,2026-10-16 16:12,Service juridique,Transports Chablais SA,Relance injustifiée – mise en demeure,"Madame, Monsieur,
+
+Vous nous relancez pour la facture FAC-2026-1120 que nous avons réglée le 2 septembre (preuve de paiement jointe). Ces relances répétées sont inacceptables : si une nouvelle relance ou des frais de retard nous sont adressés, nous engagerons une procédure.
+
+Le service juridique
+Transports Chablais SA",litige_facturation,haute,test
+DEM-025,2026-10-19 13:25,Paul Delacrétaz,Delacrétaz Vins,Merci !,"Bonjour,
+
+Merci pour la rapidité de votre intervention la semaine dernière, tout fonctionne parfaitement.
+
+Paul Delacrétaz",autre,basse,test
+DEM-026,2026-10-20 10:38,Sandra Huber,Huber Fiduciaire,TVA non détaillée,"Bonjour,
+
+La TVA n'apparaît pas séparément sur votre facture FAC-2026-1195, ce qui nous empêche de la récupérer. Pouvez-vous nous envoyer une facture conforme ?
+
+Sandra Huber",litige_facturation,normale,test
+DEM-027,2026-10-21 17:51,David Zbinden,Zbinden Sport,Frais de livraison facturés,"Bonjour,
+
+Des frais de livraison de 45 CHF figurent sur la facture FAC-2026-1206 alors que la livraison est offerte au-delà de 500 CHF de commande. Merci de les retirer.
+
+David Zbinden",litige_facturation,normale,test
+DEM-028,2026-10-22 14:04,Isabelle Dubois,Dubois Imprimerie,Toners qui fuient,"Bonjour,
+
+Deux cartouches de toner TN-500 de la commande CMD-2026-0388 fuient et salissent les impressions. Merci de nous en renvoyer deux neuves.
+
+Cordialement,
+Isabelle Dubois
+Dubois Imprimerie",reclamation,normale,test
+DEM-029,2026-10-23 11:17,Nathalie Perret,Groupe Hôtelier Lémanique,Troisième retard ce mois-ci,"Madame, Monsieur,
+
+C'est le troisième retard de livraison en un mois : la commande CMD-2026-0377, attendue le 6 octobre, n'est toujours pas arrivée. Si la situation ne s'améliore pas d'ici la fin de la semaine, nous mettrons fin à notre contrat-cadre.
+
+Nathalie Perret
+Responsable achats, Groupe Hôtelier Lémanique",reclamation,haute,test
+DEM-030,2026-10-12 08:30,Julien Favre,Cabinet d'architecture Favre,Écran rayé à la livraison,"Bonjour,
+
+Un des écrans 27 pouces EC-27Q de notre dernière livraison (CMD-2026-0405) présente une rayure sur la dalle. Nous souhaitons un échange contre un écran neuf. Vous trouverez les photos en pièce jointe.
+
+Merci,
+Julien Favre",reclamation,normale,test
+DEM-031,2026-10-13 15:43,Yves Pittet,Pittet Électricité,Avoir pour retour de docks,"Bonjour,
+
+Votre entrepôt a réceptionné le 12 octobre notre retour des docks DK-200. Merci d'établir un avoir du montant correspondant de la facture FAC-2026-1170.
+
+Salutations,
+Yves Pittet",remboursement,normale,test
+DEM-032,2026-10-14 12:56,Marc Rochat,Rochat Emballages SA,Imprimantes HS – production à l'arrêt,"Bonjour,
+
+Les 3 imprimantes laser LX-500 livrées lundi (commande CMD-2026-0412) affichent toutes l'erreur E07 depuis ce matin. Notre atelier d'étiquetage est complètement à l'arrêt et nous ne pouvons plus expédier aucune commande.
+
+Merci d'envoyer un technicien ou des appareils de remplacement aujourd'hui.
+
+Numéro client : CL-10234
+Marc Rochat
+Rochat Emballages SA",reclamation,haute,test
+DEM-033,2026-10-15 09:09,Sarah Jacot,Jacot Formation,Retour de webcams,"Bonjour,
+
+Les 2 webcams WC-HD de la commande CMD-2026-0418 ne sont pas compatibles avec nos salles de visioconférence. Pouvons-nous les retourner contre remboursement ? Elles ont été ouvertes mais pas utilisées.
+
+Sarah Jacot
+Jacot Formation",remboursement,normale,test
+DEM-034,2026-10-16 16:22,Nadia Morel,Atelier Morel Sàrl,Prix ramettes papier recyclé,"Bonjour,
+
+Quel serait votre prix pour 200 ramettes de papier A4 recyclé PA-4R livrées à Lausanne ? Nous souhaitons passer commande cette semaine.
+
+Nadia Morel",question_produit,normale,test
+DEM-035,2026-10-19 13:35,Bernard Rossier,Rossier Paysagistes,Facture en double,"Bonjour,
+
+Nous avons reçu deux factures pour la même commande (FAC-2026-1190 et FAC-2026-1191). Merci d'annuler le doublon ; aucune des deux n'a encore été payée.
+
+Bernard Rossier",litige_facturation,normale,test
+DEM-036,2026-10-20 10:48,Mélanie Cherix,Cherix Traiteur,Nouvelle adresse de livraison,"Bonjour,
+
+Merci de noter notre nouvelle adresse de livraison à partir du 1er novembre : Route de Genève 12, 1260 Nyon.
+
+Mélanie Cherix",autre,basse,exemples
+DEM-037,2026-10-21 17:01,Anne Rey,Rey & Cie SA,Remise non appliquée,"Bonjour,
+
+La remise de 10 % convenue pour les commandes de plus de 2 000 CHF n'a pas été appliquée sur la facture FAC-2026-1203 (2 450 CHF). Merci de nous envoyer une facture corrigée.
+
+Anne Rey
+Rey & Cie SA",litige_facturation,normale,test
+DEM-038,2026-10-22 14:14,Céline Aebi,Aebi Comptabilité,Procédure de configuration RAID,"Bonjour,
+
+Nous avons reçu hier les NAS NS-4. Pourriez-vous nous envoyer la procédure de configuration RAID ? Notre prestataire informatique intervient demain matin.
+
+Céline Aebi",question_produit,normale,test
+DEM-039,2026-10-23 11:27,Romain Junod,Junod Horlogerie,Conditions de paiement erronées,"Bonjour,
+
+Notre contrat prévoit un paiement à 60 jours, mais votre facture FAC-2026-1199 indique 30 jours. Merci de rectifier.
+
+Romain Junod",litige_facturation,normale,test
+DEM-040,2026-10-12 08:40,Gilles Rochat,Rochat Constructions SA,Compte bloqué – chantier lundi,"Bonjour,
+
+Votre service comptable a bloqué toute nouvelle commande en raison de la facture FAC-2026-1175, que nous contestons depuis un mois (quantités erronées). Notre chantier démarre lundi et nous ne pouvons pas commander le matériel indispensable.
+
+Gilles Rochat
+Rochat Constructions SA",litige_facturation,haute,test
+DEM-041,2026-10-13 15:53,Pharmacie Centrale,Pharmacie Centrale Sion,Facture à réémettre,"Bonjour,
+
+La facture FAC-2026-1210 a été adressée à notre ancienne adresse et à un service qui n'existe plus ; notre comptabilité ne peut pas la traiter. Merci de la réémettre à l'adresse figurant sur notre fiche client.
+
+Pharmacie Centrale Sion",litige_facturation,normale,test
+DEM-042,2026-10-14 12:06,Caroline Nicolet,Nicolet Fiduciaire,Double paiement facture FAC-2026-1102,"Bonjour,
+
+Par erreur, notre comptabilité a payé deux fois la facture FAC-2026-1102 (2 × 480 CHF). Merci de nous rembourser le second paiement de 480 CHF sur notre compte habituel.
+
+Meilleures salutations,
+Caroline Nicolet",remboursement,normale,test
+DEM-043,2026-10-15 09:19,Lucas Meier,Meier Transports,Erreur de référence,"Bonjour,
+
+Nous avions commandé 20 souris sans fil MS-30 (commande CMD-2026-0421) et avons reçu 20 souris filaires MS-10. Pouvez-vous organiser l'échange ?
+
+Merci d'avance,
+Lucas Meier
+Meier Transports",reclamation,normale,test
+DEM-044,2026-10-16 16:32,Consultant SEO,WebBoost Conseil,Améliorez votre visibilité en ligne,"Bonjour,
+
+Je suis consultant en référencement web et j'aimerais vous présenter nos services pour améliorer la visibilité de votre boutique en ligne. Seriez-vous disponible pour un appel de 15 minutes ?
+
+Cordialement",autre,basse,test
+DEM-045,2026-10-19 13:45,Richard Bonvin,Bonvin Immobilier,Accès au portail client,"Bonjour,
+
+Notre ancienne acheteuse a quitté l'entreprise. Merci de désactiver son accès au portail client et de créer un accès à mon nom.
+
+Richard Bonvin
+Bonvin Immobilier",autre,normale,test
+DEM-046,2026-10-20 10:58,Alain Aubert,Bureau Technique Aubert SA,Contestation facture FAC-2026-1201,"Bonjour,
+
+La facture FAC-2026-1201 de 18 500 CHF HT inclut 10 portables NB-14 que nous n'avons jamais commandés. Nous contestons la totalité de cette facture tant qu'elle n'est pas corrigée.
+
+Alain Aubert
+Bureau Technique Aubert SA – CL-10901",litige_facturation,haute,test
+DEM-047,2026-10-21 17:11,Kevin Moser,Moser Studio,Compatibilité écrans / MacBook,"Bonjour,
+
+Vos écrans EC-27Q sont-ils compatibles avec les MacBook récents via USB-C ?
+
+Merci,
+Kevin Moser",question_produit,basse,test
+DEM-048,2026-10-22 14:24,Anne Rey,Rey & Cie SA,Cartons abîmés – pour information,"Bonjour,
+
+Les deux derniers colis sont arrivés avec des cartons abîmés, sans dommage pour le contenu. Je vous le signale simplement pour que vous puissiez en parler à votre transporteur ; aucune action n'est nécessaire de notre côté.
+
+Bonne journée,
+Anne Rey",reclamation,basse,test

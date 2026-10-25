@@ -1,0 +1,20 @@
+FICTIVA SA
+Distribution de matériel informatique et fournitures de bureau
+Chemin des Prés 4, 1020 Renens (adresse fictive)
+
+FACTURE N° FAC-2026-1187
+Date : 02.10.2026
+
+Client : Atelier Morel Sàrl — N° client CL-10590
+Rue du Midi 8, 1003 Lausanne
+Votre commande : CMD-2026-0395
+
+Réf.     Désignation                     Qté   Prix unit.      Total
+EC-27Q   Écran 27" QHD                     5       650.00   3 250.00
+DK-200   Station d'accueil USB-C           5       120.00     600.00
+
+                                           Total HT          3 850.00
+                                           TVA 8,1 %           311.85
+                                           Total TTC (CHF)   4 161.85
+
+Conditions : payable à 30 jours net, échéance le 01.11.2026.

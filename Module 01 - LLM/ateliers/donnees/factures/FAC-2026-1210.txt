@@ -1,0 +1,15 @@
+FICTIVA  SA                           FACTURE
+                                      No  FAC-2026-1210
+Renens, le 12 octobre 2026
+Destinataire: Pharmacie Centrale Sion   (cl. CL-10650)
+   Service achats - Av. de la Gare 3, 1950 Sion
+------------------------------------------------------------
+Qte | Article                                | P.U.  | Montant
+  8 | TN-500 Toner noir                      | 89.00 |  712.00
+ 40 | PA-4R Papier A4 recyclé (ramette)      |  6.50 |  260.00
+  1 | LIV-EX Livraison express               | 35.00 |   35.00
+------------------------------------------------------------
+Sous-total                                         1'007.00
+TVA (8.1%)                                            81.57
+TOTAL CHF                                          1'088.57
+Payable net a 10 jours.

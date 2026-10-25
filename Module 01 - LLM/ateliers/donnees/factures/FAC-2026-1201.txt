@@ -1,0 +1,16 @@
+FICTIVA SA — FACTURE
+
+Numéro : FAC-2026-1201          Date d'émission : 07.10.2026
+Client : Bureau Technique Aubert SA (CL-10901)
+         Route de Berne 21, 1010 Lausanne
+
+Référence  Article                         Quantité  P.U. HT   Montant HT
+NB-14      Ordinateur portable 14"            10     1 450.00   14 500.00
+EC-27Q     Écran 27" QHD                       6       600.00    3 600.00
+DK-200     Station d'accueil USB-C             4       100.00      400.00
+
+Total hors taxes .............................................. 18 500.00
+TVA au taux de 8,1 % ...........................................  1 498.50
+Montant total à payer (CHF) ................................... 19 998.50
+
+Délai de paiement : 30 jours.

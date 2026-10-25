@@ -1,0 +1,44 @@
+[
+  {
+    "id": "P1", "nom": "Traitement des emails clients", "domaine": "Service client",
+    "description": "Tri des emails, identification du client et de la commande, calcul des remboursements, réponse, création du ticket.",
+    "notes": {"volume": 5, "repetitivite": 4, "structuration": 2, "regles": 4, "valeur": 4, "risque": 4},
+    "effort": 3, "typologie": "support"
+  },
+  {
+    "id": "P2", "nom": "Saisie des factures fournisseurs", "domaine": "Comptabilité",
+    "description": "Lecture des factures PDF reçues par email, extraction des montants et de la TVA, rapprochement avec le bon de commande, saisie dans l'ERP.",
+    "notes": {"volume": 5, "repetitivite": 5, "structuration": 3, "regles": 5, "valeur": 4, "risque": 4},
+    "effort": 2, "typologie": "traitement intelligent de documents (IDP)"
+  },
+  {
+    "id": "P3", "nom": "Rapprochement bancaire", "domaine": "Finance",
+    "description": "Rapprochement des relevés bancaires et des écritures comptables, traitement des écarts.",
+    "notes": {"volume": 4, "repetitivite": 5, "structuration": 5, "regles": 5, "valeur": 3, "risque": 3},
+    "effort": 1, "typologie": "rapprochement"
+  },
+  {
+    "id": "P4", "nom": "Onboarding des nouveaux clients B2B", "domaine": "Ventes",
+    "description": "Vérification du registre du commerce et du numéro IDE, ouverture du compte, création des accès au portail.",
+    "notes": {"volume": 2, "repetitivite": 4, "structuration": 3, "regles": 4, "valeur": 3, "risque": 3},
+    "effort": 3, "typologie": "onboarding"
+  },
+  {
+    "id": "P5", "nom": "Reporting mensuel des ventes", "domaine": "Direction",
+    "description": "Consolidation des ventes par région et par famille de produits, commentaire des écarts pour le comité de direction.",
+    "notes": {"volume": 1, "repetitivite": 5, "structuration": 5, "regles": 3, "valeur": 2, "risque": 4},
+    "effort": 2, "typologie": "reporting"
+  },
+  {
+    "id": "P6", "nom": "Présélection des candidatures", "domaine": "Ressources humaines",
+    "description": "Lecture des CV et des lettres de motivation, classement des candidats pour un poste.",
+    "notes": {"volume": 3, "repetitivite": 3, "structuration": 2, "regles": 2, "valeur": 3, "risque": 1},
+    "effort": 4, "typologie": "décision sur des personnes (haut risque selon l'AI Act)"
+  },
+  {
+    "id": "P7", "nom": "Négociation des contrats-cadres", "domaine": "Achats",
+    "description": "Négociation annuelle des conditions avec les grands fournisseurs.",
+    "notes": {"volume": 1, "repetitivite": 1, "structuration": 1, "regles": 1, "valeur": 4, "risque": 2},
+    "effort": 5, "typologie": "décision stratégique, peu répétitive"
+  }
+]

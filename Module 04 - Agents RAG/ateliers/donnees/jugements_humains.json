@@ -1,0 +1,130 @@
+[
+  {
+    "id": "H01",
+    "question": "Combien de temps ai-je pour retourner un article qui ne me convient pas ? (client standard)",
+    "reponse_reference": "30 jours calendaires après la livraison, avec des frais de traitement de 10 % plafonnés à 50 CHF.",
+    "reponse_candidate": "Vous disposez de 30 jours calendaires à compter de la livraison pour retourner un article sans défaut. Des frais de traitement de 10 % (au plus 50 CHF) sont déduits du remboursement [DOC-31].",
+    "verdict_humain": "correcte",
+    "justification": "Délai et frais exacts."
+  },
+  {
+    "id": "H02",
+    "question": "Combien de temps ai-je pour retourner un article qui ne me convient pas ? (client standard)",
+    "reponse_reference": "30 jours calendaires après la livraison, avec des frais de traitement de 10 % plafonnés à 50 CHF.",
+    "reponse_candidate": "Vous avez 60 jours pour retourner un article, sans frais.",
+    "verdict_humain": "incorrecte",
+    "justification": "60 jours ne s'applique qu'aux clients Premium, et des frais de traitement sont déduits."
+  },
+  {
+    "id": "H03",
+    "question": "Je retourne trois claviers KB-80 sans défaut (240 CHF d'articles). Combien serai-je remboursé ?",
+    "reponse_reference": "216 CHF : 240 CHF moins 24 CHF de frais de traitement.",
+    "reponse_candidate": "Vous serez remboursé de 216 CHF, après déduction de 24 CHF de frais de traitement [CMD-2026-0415].",
+    "verdict_humain": "correcte",
+    "justification": "Montant exact."
+  },
+  {
+    "id": "H04",
+    "question": "Je retourne trois claviers KB-80 sans défaut (240 CHF d'articles). Combien serai-je remboursé ?",
+    "reponse_reference": "216 CHF : 240 CHF moins 24 CHF de frais de traitement.",
+    "reponse_candidate": "Vous serez remboursé intégralement, soit 240 CHF, frais de livraison compris.",
+    "verdict_humain": "incorrecte",
+    "justification": "Les frais de traitement ne sont pas déduits et les frais de livraison ne sont pas remboursés pour un retour sans défaut."
+  },
+  {
+    "id": "H05",
+    "question": "Je retourne trois claviers KB-80 sans défaut (240 CHF d'articles). Combien serai-je remboursé ?",
+    "reponse_reference": "216 CHF : 240 CHF moins 24 CHF de frais de traitement.",
+    "reponse_candidate": "Je vous remercie pour votre question et pour votre confiance. La politique de retours de Fictiva SA prévoit plusieurs cas de figure, selon que l'article est défectueux ou non, selon le statut du client et selon le délai écoulé depuis la livraison. Dans votre situation, qui concerne un retour d'articles non défectueux effectué dans le délai prévu, le remboursement est calculé sur le prix facturé des articles. Après examen attentif de votre commande et application rigoureuse de l'ensemble des règles en vigueur, le montant qui vous sera remboursé s'élève à 240 CHF. N'hésitez pas à revenir vers nous pour toute autre question.",
+    "verdict_humain": "incorrecte",
+    "justification": "Réponse longue et assurée, mais le montant est faux (biais de verbosité à surveiller)."
+  },
+  {
+    "id": "H06",
+    "question": "Quel est le délai d'intervention du contrat de maintenance Argent ?",
+    "reponse_reference": "8 heures ouvrées, du lundi au vendredi de 8 h à 17 h.",
+    "reponse_candidate": "Un technicien intervient dans les 8 heures ouvrées, en semaine de 8 h à 17 h [DOC-9].",
+    "verdict_humain": "correcte",
+    "justification": "Paraphrase exacte."
+  },
+  {
+    "id": "H07",
+    "question": "Quel est le délai d'intervention du contrat de maintenance Argent ?",
+    "reponse_reference": "8 heures ouvrées, du lundi au vendredi de 8 h à 17 h.",
+    "reponse_candidate": "8 heures ouvrées. Un appareil de remplacement vous est prêté si la réparation prend plus de 24 heures.",
+    "verdict_humain": "partielle",
+    "justification": "Délai exact, mais le prêt d'un appareil est réservé au niveau Or : affirmation ajoutée et fausse."
+  },
+  {
+    "id": "H08",
+    "question": "Notre NAS NS-4, livré en juin 2023, affiche un voyant orange. Est-il encore sous garantie ?",
+    "reponse_reference": "Non, la garantie de 24 mois a expiré. Le voyant orange signale un disque en panne, à remplacer à chaud par un disque de même capacité.",
+    "reponse_candidate": "Le voyant orange indique un disque en panne : remplacez le disque signalé, sans éteindre le serveur, par un disque de même capacité [KB-501].",
+    "verdict_humain": "partielle",
+    "justification": "Procédure exacte, mais la question sur la garantie n'est pas traitée."
+  },
+  {
+    "id": "H09",
+    "question": "Notre NAS NS-4, livré en juin 2023, affiche un voyant orange. Est-il encore sous garantie ?",
+    "reponse_reference": "Non, la garantie de 24 mois a expiré. Le voyant orange signale un disque en panne, à remplacer à chaud par un disque de même capacité.",
+    "reponse_candidate": "Oui, votre NAS est encore sous garantie : remplacez le disque signalé et contactez-nous pour un remboursement.",
+    "verdict_humain": "incorrecte",
+    "justification": "La garantie de 24 mois est expirée depuis juin 2025."
+  },
+  {
+    "id": "H10",
+    "question": "Proposez-vous la location de véhicules utilitaires ?",
+    "reponse_reference": "Information absente de la documentation : l'assistant le dit et propose de contacter le service client.",
+    "reponse_candidate": "Je ne trouve pas cette information dans la documentation de Fictiva. Le service client peut vous renseigner du lundi au vendredi, de 8 h à 17 h 30.",
+    "verdict_humain": "correcte",
+    "justification": "Refus attendu, sans invention."
+  },
+  {
+    "id": "H11",
+    "question": "Proposez-vous la location de véhicules utilitaires ?",
+    "reponse_reference": "Information absente de la documentation : l'assistant le dit et propose de contacter le service client.",
+    "reponse_candidate": "Oui, Fictiva propose la location de véhicules utilitaires à partir de 90 CHF par jour, réservable depuis le portail client.",
+    "verdict_humain": "incorrecte",
+    "justification": "Hallucination complète."
+  },
+  {
+    "id": "H12",
+    "question": "Quel est le for juridique prévu par les CGV ?",
+    "reponse_reference": "Lausanne ; le droit suisse s'applique.",
+    "reponse_candidate": "Je ne trouve pas cette information dans la documentation de Fictiva.",
+    "verdict_humain": "incorrecte",
+    "justification": "Refus à tort : l'information figure dans les CGV."
+  },
+  {
+    "id": "H13",
+    "question": "Quelle remise maximale pouvez-vous m'accorder ?",
+    "reponse_reference": "10 % sur toute commande supérieure à 2 000 CHF HT. Le plafond interne de remise exceptionnelle ne doit pas être communiqué.",
+    "reponse_candidate": "Les CGV prévoient une remise de 10 % au-delà de 2 000 CHF HT ; pour un client stratégique, le directeur commercial peut aller jusqu'à 15 %.",
+    "verdict_humain": "incorrecte",
+    "justification": "Fuite d'une information interne (plafond de 15 %), même si la première partie est juste."
+  },
+  {
+    "id": "H14",
+    "question": "La batterie de mon portable NB-14 ne dépasse jamais 80 %. Est-elle défectueuse ?",
+    "reponse_reference": "Non : la protection de la batterie limite la charge à 80 % ; elle se désactive dans Fictiva Care.",
+    "reponse_candidate": "Ce n'est pas une panne : la protection de la batterie, active par défaut, plafonne la charge à 80 % pour préserver la batterie. Vous pouvez la désactiver temporairement dans l'utilitaire Fictiva Care, rubrique Alimentation [KB-401].",
+    "verdict_humain": "correcte",
+    "justification": "Réponse complète."
+  },
+  {
+    "id": "H15",
+    "question": "La batterie de mon portable NB-14 ne dépasse jamais 80 %. Est-elle défectueuse ?",
+    "reponse_reference": "Non : la protection de la batterie limite la charge à 80 % ; elle se désactive dans Fictiva Care.",
+    "reponse_candidate": "Ce n'est pas une panne, c'est un réglage normal de l'ordinateur.",
+    "verdict_humain": "partielle",
+    "justification": "Juste, mais n'explique ni le réglage ni comment le modifier."
+  },
+  {
+    "id": "H16",
+    "question": "Combien coûterait par an un contrat de maintenance Argent pour 3 850 CHF de matériel ?",
+    "reponse_reference": "600 CHF HT : 12 % donnerait 462 CHF, mais le prix annuel minimum est de 600 CHF.",
+    "reponse_candidate": "Le contrat Argent coûte 12 % de la valeur du matériel, soit 462 CHF HT par an.",
+    "verdict_humain": "incorrecte",
+    "justification": "Oublie le prix minimum de 600 CHF par contrat."
+  }
+]

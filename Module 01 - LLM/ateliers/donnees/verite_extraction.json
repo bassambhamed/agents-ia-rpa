@@ -1,0 +1,336 @@
+{
+  "emails": {
+    "DEM-032": {
+      "numero_client": "CL-10234",
+      "numero_commande": "CMD-2026-0412",
+      "numero_facture": null,
+      "entreprise": "Rochat Emballages SA",
+      "interlocuteur": "Marc Rochat",
+      "produits": [
+        {
+          "reference": "LX-500",
+          "quantite": 3
+        }
+      ],
+      "montant_chf": null
+    },
+    "DEM-043": {
+      "numero_client": null,
+      "numero_commande": "CMD-2026-0421",
+      "numero_facture": null,
+      "entreprise": "Meier Transports",
+      "interlocuteur": "Lucas Meier",
+      "produits": [
+        {
+          "reference": "MS-30",
+          "quantite": 20
+        },
+        {
+          "reference": "MS-10",
+          "quantite": 20
+        }
+      ],
+      "montant_chf": null
+    },
+    "DEM-021": {
+      "numero_client": "CL-10456",
+      "numero_commande": "CMD-2026-0415",
+      "numero_facture": null,
+      "entreprise": "Chevalier Conseil",
+      "interlocuteur": "Émilie Chevalier",
+      "produits": [
+        {
+          "reference": "KB-80",
+          "quantite": 3
+        }
+      ],
+      "montant_chf": null
+    },
+    "DEM-017": {
+      "numero_client": null,
+      "numero_commande": "CMD-2026-0402",
+      "numero_facture": null,
+      "entreprise": "Keller & Fils SA",
+      "interlocuteur": "Daniel Keller",
+      "produits": [
+        {
+          "reference": "SE-700",
+          "quantite": 10
+        }
+      ],
+      "montant_chf": 7000.0
+    },
+    "DEM-019": {
+      "numero_client": null,
+      "numero_commande": null,
+      "numero_facture": "FAC-2026-1150",
+      "entreprise": "Blanc Design",
+      "interlocuteur": "Laura Blanc",
+      "produits": [
+        {
+          "reference": "EC-27Q",
+          "quantite": 1
+        }
+      ],
+      "montant_chf": 600.0
+    },
+    "DEM-006": {
+      "numero_client": null,
+      "numero_commande": null,
+      "numero_facture": null,
+      "entreprise": "Müller Logistique Sàrl",
+      "interlocuteur": "Pierre Müller",
+      "produits": [],
+      "montant_chf": 1250.0
+    },
+    "DEM-042": {
+      "numero_client": null,
+      "numero_commande": null,
+      "numero_facture": "FAC-2026-1102",
+      "entreprise": "Nicolet Fiduciaire",
+      "interlocuteur": "Caroline Nicolet",
+      "produits": [],
+      "montant_chf": 480.0
+    },
+    "DEM-012": {
+      "numero_client": null,
+      "numero_commande": "CMD-2026-0390",
+      "numero_facture": null,
+      "entreprise": "Golay Architectes",
+      "interlocuteur": "Martine Golay",
+      "produits": [
+        {
+          "reference": "NB-14",
+          "quantite": 12
+        }
+      ],
+      "montant_chf": 7200.0
+    },
+    "DEM-014": {
+      "numero_client": "CL-10590",
+      "numero_commande": null,
+      "numero_facture": "FAC-2026-1187",
+      "entreprise": "Atelier Morel Sàrl",
+      "interlocuteur": "Nadia Morel",
+      "produits": [
+        {
+          "reference": "EC-27Q",
+          "quantite": 5
+        }
+      ],
+      "montant_chf": 250.0
+    },
+    "DEM-046": {
+      "numero_client": "CL-10901",
+      "numero_commande": null,
+      "numero_facture": "FAC-2026-1201",
+      "entreprise": "Bureau Technique Aubert SA",
+      "interlocuteur": "Alain Aubert",
+      "produits": [
+        {
+          "reference": "NB-14",
+          "quantite": 10
+        }
+      ],
+      "montant_chf": 18500.0
+    }
+  },
+  "factures": {
+    "FAC-2026-1187.txt": {
+      "numero_facture": "FAC-2026-1187",
+      "date_facture": "2026-10-02",
+      "client_nom": "Atelier Morel Sàrl",
+      "numero_client": "CL-10590",
+      "lignes": [
+        {
+          "reference": "EC-27Q",
+          "designation": "Écran 27\" QHD",
+          "quantite": 5,
+          "prix_unitaire_chf": 650.0,
+          "total_ligne_chf": 3250.0
+        },
+        {
+          "reference": "DK-200",
+          "designation": "Station d'accueil USB-C",
+          "quantite": 5,
+          "prix_unitaire_chf": 120.0,
+          "total_ligne_chf": 600.0
+        }
+      ],
+      "remise_chf": null,
+      "total_ht_chf": 3850.0,
+      "taux_tva_pct": 8.1,
+      "montant_tva_chf": 311.85,
+      "total_ttc_chf": 4161.85,
+      "delai_paiement_jours": 30
+    },
+    "FAC-2026-1201.txt": {
+      "numero_facture": "FAC-2026-1201",
+      "date_facture": "2026-10-07",
+      "client_nom": "Bureau Technique Aubert SA",
+      "numero_client": "CL-10901",
+      "lignes": [
+        {
+          "reference": "NB-14",
+          "designation": "Ordinateur portable 14\"",
+          "quantite": 10,
+          "prix_unitaire_chf": 1450.0,
+          "total_ligne_chf": 14500.0
+        },
+        {
+          "reference": "EC-27Q",
+          "designation": "Écran 27\" QHD",
+          "quantite": 6,
+          "prix_unitaire_chf": 600.0,
+          "total_ligne_chf": 3600.0
+        },
+        {
+          "reference": "DK-200",
+          "designation": "Station d'accueil USB-C",
+          "quantite": 4,
+          "prix_unitaire_chf": 100.0,
+          "total_ligne_chf": 400.0
+        }
+      ],
+      "remise_chf": null,
+      "total_ht_chf": 18500.0,
+      "taux_tva_pct": 8.1,
+      "montant_tva_chf": 1498.5,
+      "total_ttc_chf": 19998.5,
+      "delai_paiement_jours": 30
+    },
+    "FAC-2026-1203.txt": {
+      "numero_facture": "FAC-2026-1203",
+      "date_facture": "2026-10-08",
+      "client_nom": "Rey & Cie SA",
+      "numero_client": "CL-10777",
+      "lignes": [
+        {
+          "reference": "SE-700",
+          "designation": "Siège ergonomique",
+          "quantite": 3,
+          "prix_unitaire_chf": 700.0,
+          "total_ligne_chf": 2100.0
+        },
+        {
+          "reference": "KB-80",
+          "designation": "Clavier sans fil",
+          "quantite": 5,
+          "prix_unitaire_chf": 70.0,
+          "total_ligne_chf": 350.0
+        }
+      ],
+      "remise_chf": null,
+      "total_ht_chf": 2450.0,
+      "taux_tva_pct": 8.1,
+      "montant_tva_chf": 198.45,
+      "total_ttc_chf": 2648.45,
+      "delai_paiement_jours": 30
+    },
+    "FAC-2026-1210.txt": {
+      "numero_facture": "FAC-2026-1210",
+      "date_facture": "2026-10-12",
+      "client_nom": "Pharmacie Centrale Sion",
+      "numero_client": "CL-10650",
+      "lignes": [
+        {
+          "reference": "TN-500",
+          "designation": "Toner noir",
+          "quantite": 8,
+          "prix_unitaire_chf": 89.0,
+          "total_ligne_chf": 712.0
+        },
+        {
+          "reference": "PA-4R",
+          "designation": "Papier A4 recyclé (ramette)",
+          "quantite": 40,
+          "prix_unitaire_chf": 6.5,
+          "total_ligne_chf": 260.0
+        },
+        {
+          "reference": "LIV-EX",
+          "designation": "Livraison express",
+          "quantite": 1,
+          "prix_unitaire_chf": 35.0,
+          "total_ligne_chf": 35.0
+        }
+      ],
+      "remise_chf": null,
+      "total_ht_chf": 1007.0,
+      "taux_tva_pct": 8.1,
+      "montant_tva_chf": 81.57,
+      "total_ttc_chf": 1088.57,
+      "delai_paiement_jours": 10
+    },
+    "FAC-2026-1220.txt": {
+      "numero_facture": "FAC-2026-1220",
+      "date_facture": "2026-10-15",
+      "client_nom": "Fondation Les Trois Sapins",
+      "numero_client": "CL-11140",
+      "lignes": [
+        {
+          "reference": "NS-4",
+          "designation": "Serveur NAS 4 baies",
+          "quantite": 2,
+          "prix_unitaire_chf": 1250.0,
+          "total_ligne_chf": 2500.0
+        },
+        {
+          "reference": "HD-8T",
+          "designation": "Disque dur 8 To",
+          "quantite": 8,
+          "prix_unitaire_chf": 210.0,
+          "total_ligne_chf": 1680.0
+        },
+        {
+          "reference": "INST-NAS",
+          "designation": "Installation et configuration",
+          "quantite": 1,
+          "prix_unitaire_chf": 450.0,
+          "total_ligne_chf": 450.0
+        }
+      ],
+      "remise_chf": 231.5,
+      "total_ht_chf": 4398.5,
+      "taux_tva_pct": 8.1,
+      "montant_tva_chf": 356.28,
+      "total_ttc_chf": 4754.78,
+      "delai_paiement_jours": 60
+    }
+  },
+  "contrats": {
+    "CTR-2025-007_fourniture_GHL.txt": {
+      "type_contrat": "fourniture",
+      "client_nom": "Groupe Hôtelier Lémanique",
+      "date_debut": "2025-01-01",
+      "duree_mois": 36,
+      "reconduction_tacite": true,
+      "preavis_resiliation_mois": 3,
+      "montant_chf": 120000.0,
+      "periodicite": "annuel",
+      "delai_paiement_jours": 60
+    },
+    "CTR-2026-031_maintenance_Monnier.txt": {
+      "type_contrat": "maintenance",
+      "client_nom": "Étude Monnier notaires",
+      "date_debut": "2026-03-01",
+      "duree_mois": 12,
+      "reconduction_tacite": true,
+      "preavis_resiliation_mois": 1,
+      "montant_chf": 2400.0,
+      "periodicite": "annuel",
+      "delai_paiement_jours": 30
+    },
+    "CTR-2026-044_location_TroisSapins.txt": {
+      "type_contrat": "location",
+      "client_nom": "Fondation Les Trois Sapins",
+      "date_debut": "2026-07-01",
+      "duree_mois": 24,
+      "reconduction_tacite": false,
+      "preavis_resiliation_mois": 6,
+      "montant_chf": 850.0,
+      "periodicite": "mensuel",
+      "delai_paiement_jours": 30
+    }
+  }
+}

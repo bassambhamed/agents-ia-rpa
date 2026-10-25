@@ -1,0 +1,52 @@
+# Documents de travail non publiés : plan détaillé, thème Beamer et sources LaTeX
+# des supports (seuls les PDF des slides sont versionnés)
+plan.md
+style/
+Module 01 - LLM/slides/module01_llm.tex
+Module 02 - RAG/slides/module02_rag.tex
+Module 03 - Agents IA/slides/module03_agents.tex
+Module 04 - Agents RAG/slides/module04_agents_rag.tex
+Module 05 - RPA 2.0/slides/module05_rpa.tex
+
+# Secrets : clés d'API des fournisseurs de LLM et des outils d'observabilité.
+# Seul le modèle .env.example (sans clés) est versionné.
+.env
+.env.*
+!.env.example
+!.env.local.example
+
+# Environnements Python et caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Modèles d'embeddings et de reranking téléchargés, résultats des ateliers
+.cache_modeles/
+resultats/
+
+# Frontend Next.js
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# Fichiers auxiliaires de LaTeX (les PDF sont versionnés)
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb
+*.synctex.gz
+
+# Système et réglages locaux de l'éditeur ou de l'assistant
+.DS_Store
+._*
+.claude/settings.local.json
