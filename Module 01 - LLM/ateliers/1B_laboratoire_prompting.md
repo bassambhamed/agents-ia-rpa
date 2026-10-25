@@ -134,15 +134,15 @@ p4 = banc_urgence(V4, avec_schema=True)
 ## Exercice 2 — Raisonnement : calculer un remboursement
 
 **Tâche.** Appliquer la politique de retours (`donnees/politique_retours.md`) à dix cas : délais, statut Premium, défaut, consommables, frais plafonnés, validation au-delà de 5 000 CHF.
-**Mesure.** Nombre de montants exacts sur 10, coût estimé et latence.
+**Mesure.** Nombre de montants exacts sur 10, tokens consommés, coût estimé et latence.
 
-On compare un petit modèle **sans raisonnement**, aidé ou non par les techniques du module 1.3, à un **modèle de raisonnement**. Adaptez les deux noms à vos accès (par exemple `nvidia:google/gemma-4-31b-it` et `nvidia:openai/gpt-oss-20b`).
+On compare un petit modèle **sans raisonnement**, aidé ou non par les techniques du module 1.3, à un **modèle de raisonnement**. Adaptez les deux noms à vos accès. Le petit modèle n'a pas de tarif public dans `llm.TARIFS` : son coût s'affiche à 0, comparez plutôt les tokens.
 
 ```python
 import pandas as pd
 
-MODELE_SIMPLE = "groq:llama-3.1-8b-instant"       # petit modèle, sans raisonnement
-MODELE_RAISONNEMENT = "groq:openai/gpt-oss-20b"   # modèle de raisonnement
+MODELE_SIMPLE = "nvidia:nvidia/nemotron-3.5-bolt-e4b"   # petit modèle, sans raisonnement
+MODELE_RAISONNEMENT = "groq:openai/gpt-oss-20b"         # modèle de raisonnement
 from pydantic import BaseModel, Field
 
 POLITIQUE = llm.lire("politique_retours.md")
@@ -180,12 +180,13 @@ def banc_remboursement(schema, modele, repetitions=1):
             "attendu": cas["montant_attendu_chf"],
             "obtenu": vote,
             "juste": vote is not None and abs(vote - cas["montant_attendu_chf"]) < 0.01,
+            "tokens": sum(r.tokens_entree + r.tokens_sortie for r in reponses),
             "cout_usd": sum(r.cout_usd or 0 for r in reponses),
             "latence_s": round(sum(r.latence_s for r in reponses), 1),
         }
 
     resultats = pd.DataFrame(llm.en_lot(un_cas, CAS))
-    print(f"{resultats.juste.sum()}/10 justes, coût total {resultats.cout_usd.sum():.4f} $")
+    print(f"{resultats.juste.sum()}/10 justes, {resultats.tokens.sum()} tokens, coût total {resultats.cout_usd.sum():.4f} $")
     return resultats
 ```
 
@@ -202,12 +203,12 @@ modele_raisonnement = banc_remboursement(Montant, MODELE_RAISONNEMENT)          
 raisonne   # lisez les cas faux : quel article a été mal appliqué ?
 ```
 
-| Variante | Justes / 10 | Coût estimé | Latence | Observations |
-|---|---|---|---|---|
-| A. Directe | | | | |
-| B. Chain-of-thought | | | | |
-| C. Self-consistency | | | | |
-| D. Modèle de raisonnement | | | | |
+| Variante | Justes / 10 | Tokens | Coût estimé | Latence | Observations |
+|---|---|---|---|---|---|
+| A. Directe | | | | | |
+| B. Chain-of-thought | | | | | |
+| C. Self-consistency | | | | | |
+| D. Modèle de raisonnement | | | | | |
 
 **Questions**
 1. Le champ `raisonnement` est placé **avant** `montant_chf` dans le schéma. Pourquoi cet ordre compte-t-il ?
