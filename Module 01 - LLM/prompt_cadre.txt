@@ -1,0 +1,52 @@
+# ==============================================================================
+# PROMPT CADRE OPTIMISÉ : DIAGNOSTIC & REMÉDIATION DES OUTPUTS NON-JSON DYNAMICS 365
+# ==============================================================================
+
+### [C] CONTEXTE
+Je suis ingénieur en systèmes d'information (10 ans d'expérience) au sein d'un Fournisseur de Services Internet (FSI / Opérateur Télécom). Dans le cadre de projets d'intégration d'entreprise reliant notre SI (BSS, portails clients, middlewares/ESB [ex: MuleSoft, Kafka, Azure API Management ou scripts internes]) avec Microsoft Dynamics 365 CRM (Customer Engagement / Dataverse), nous rencontrons une anomalie d'interfaçage : certains appels vers les API dites « standard » de Dynamics 365 ne restituent pas de payload au format JSON, mais renvoient du XML/SOAP, du HTML, du texte brut ou du multipart.
+
+### [A] ACTION
+Diagnostique de manière exhaustive les causes techniques pour lesquelles une API standard ou un endpoint Dynamics 365 ne renvoie pas de format JSON, puis élabore un guide de remédiation technique complet comprenant :
+1. Une matrice des causes racines probables (protocolaires, headers, versions d'endpoints, typologie de requêtes).
+2. Les corrections exactes côté appelant (headers HTTP, paramètres OData, payload de requête).
+3. Les stratégies d'adaptation côté middleware d'intégration si la restitution native non-JSON est inévitable (ex: $batch multipart, export binaire, custom actions historiques).
+
+### [D] DIRECTIVES & CONTRAINTES
+- **Niveau technique** : Réponse de niveau Architecte / Ingénieur Senior (pas de vulgarisation élémentaire, explications précises des couches protocolaires HTTP et Dataverse).
+- **Couverture obligatoire des scénarios suivants** :
+  - Conflits et omissions de headers HTTP (`Accept`, `Content-Type`, `OData-Version`, `OData-MaxVersion: 4.0`).
+  - Dépréciation et confusion d'endpoints : Web API REST/OData v4 (`/api/data/v9.x/`) vs legacy SOAP 2011 (`/XRMServices/2011/Organization.svc`).
+  - Requêtes groupées OData `$batch` et gestion du format `multipart/mixed` vs batch JSON.
+  - Réponses HTML inattendues (redirections OAuth 2.0 / Entra ID, proxy/WAF d'entreprise, expiration de bearer token, erreurs 401/403/502).
+  - Cas spécifiques Dataverse : exécution de requêtes FetchXML via Web API, Custom Actions / Plugins retournant des chaînes scalaires ou du XML sérialisé.
+- **Format du livrable** :
+  - Markdown structuré avec tableaux comparatifs et blocs de code (exemples cURL / requêtes HTTP brutes).
+  - Fournir pour chaque scénario la commande de test/reproduction et la correction immédiate.
+- **Contraintes négatives** :
+  - Ne pas se limiter à un simple "ajoutez Accept: application/json" sans détailler les cas limites.
+  - Ne pas inventer de paramètres hors spécifications Microsoft Dataverse Web API.
+
+### [R] RÔLE & POSTURE
+Agis en tant qu'Architecte Solutions Microsoft Dataverse & Intégration Systèmes d'Information Senior (15+ ans d'expérience dans les environnements Télécoms et SI d'entreprise distribués). Adopte une posture d'audit d'ingénierie : rigoureuse, orientée causes racines (RCA) et patterns d'architecture robuste.
+
+### [E] EXEMPLES & GABARIT DE SORTIE
+Structure impérativement ta restitution selon le gabarit suivant :
+
+#### 1. Matrice d'Analyse des Causes Racines (RCA)
+| Type d'output reçu | Endpoint / Méthode | Cause technique exacte | Niveau de sévérité |
+| :--- | :--- | :--- | :--- |
+| Ex: XML (Atom/SOAP) | ... | ... | ... |
+| Ex: HTML (doctype...) | ... | ... | ... |
+| Ex: multipart/mixed | ... | ... | ... |
+
+#### 2. Guide d'Audit et Corrections Pratiques
+Pour chaque cause identifiée :
+- **Symptôme & Trace HTTP** (Requête vs Réponse observée).
+- **Cause racine protocolaire / Dataverse**.
+- **Correctif immédiat** (Requête HTTP / Headers conformes).
+
+#### 3. Patterns d'Intégration Middleware (FSI / Telco)
+- Comment industrialiser la normalisation JSON au niveau du bus d'intégration (ESB / API Gateway).
+- Gestion des erreurs et du renouvellement de token OAuth pour intercepter les faux retours HTML.
+
+#### 4. Checklist d'homologation d'une API Dynamics 365 pour les flux SI
