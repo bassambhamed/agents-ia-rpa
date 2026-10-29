@@ -7,7 +7,6 @@ fournisseurs qui exposent tous le format OpenAI Chat Completions :
     groq         https://api.groq.com/openai/v1        clé GROQ_API_KEY
     nvidia       https://integrate.api.nvidia.com/v1   clé NVIDIA_API_KEY
     openrouter   https://openrouter.ai/api/v1          clé OPENROUTER_API_KEY
-    huggingface  https://router.huggingface.co/v1      clé HF_TOKEN
 
 Un modèle est désigné par « fournisseur:modèle », par exemple
 groq:openai/gpt-oss-20b ou nvidia:nvidia/nemotron-3.5-lightning-30b-a3b.
@@ -46,16 +45,14 @@ FOURNISSEURS = {
     "groq": ("https://api.groq.com/openai/v1", "GROQ_API_KEY"),
     "nvidia": ("https://integrate.api.nvidia.com/v1", "NVIDIA_API_KEY"),
     "openrouter": ("https://openrouter.ai/api/v1", "OPENROUTER_API_KEY"),
-    "huggingface": ("https://router.huggingface.co/v1", "HF_TOKEN"),
 }
 
 # Ordre d'essai quand le modèle par défaut n'est pas accessible (paliers gratuits
-# vérifiés en octobre 2026 ; Hugging Face exige des crédits, épuisés sur un compte gratuit)
+
 MODELES_DE_REPLI = [
     "groq:openai/gpt-oss-20b",
     "nvidia:nvidia/nemotron-3.5-lightning-30b-a3b",
     "openrouter:google/gemma-4-26b-a4b-it:free",
-    "huggingface:openai/gpt-oss-20b",
 ]
 
 # Tarifs publics indicatifs en USD par million de tokens : (entrée, sortie),
